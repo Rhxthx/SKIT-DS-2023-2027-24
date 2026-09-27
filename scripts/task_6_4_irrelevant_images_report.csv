@@ -1,0 +1,377 @@
+image,decision,reason,detected_animals
+Deer_103.jpg,REMOVE,No genuine animal detected,
+Deer_105.jpg,REMOVE,No genuine animal detected,
+Deer_131.jpg,KEEP,Genuine animal detected,cow (0.59); cow (0.58); cow (0.48)
+Deer_138.jpg,KEEP,Genuine animal detected,dog (0.27); bird (0.22); bird (0.20)
+Deer_143.jpg,KEEP,Genuine animal detected,dog (0.24)
+Deer_146.jpg,REMOVE,No genuine animal detected,
+Deer_150.jpg,KEEP,Genuine animal detected,cow (0.74)
+Deer_170.jpg,REMOVE,Poor quality — Task 6.3,
+Deer_180.jpg,REMOVE,No genuine animal detected,
+Deer_187.jpg,REMOVE,No genuine animal detected,
+Deer_2.jpg,REMOVE,No genuine animal detected,
+Deer_213.jpg,REMOVE,No genuine animal detected,
+Deer_227.jpg,KEEP,Genuine animal detected,bear (0.67); bear (0.23)
+Deer_240.jpg,REMOVE,No genuine animal detected,
+Deer_257.jpg,REMOVE,No genuine animal detected,
+Deer_274.jpg,KEEP,Genuine animal detected,cow (0.33); cow (0.32)
+Deer_278.jpg,KEEP,Genuine animal detected,bear (0.74)
+Deer_281.jpg,KEEP,Genuine animal detected,dog (0.56)
+Deer_291.jpg,KEEP,Genuine animal detected,cow (0.62); sheep (0.46); bird (0.35); sheep (0.27)
+Deer_307.jpg,KEEP,Genuine animal detected,cow (0.41)
+Deer_330.jpg,REMOVE,No genuine animal detected,
+Deer_333.jpg,KEEP,Genuine animal detected,bear (0.43)
+Deer_340.jpg,REMOVE,Poor quality — Task 6.3,
+Deer_341.jpg,REMOVE,Poor quality — Task 6.3,
+Deer_343.jpg,REMOVE,No genuine animal detected,
+Deer_347.jpg,REMOVE,No genuine animal detected,
+Deer_351.jpg,REMOVE,No genuine animal detected,
+Deer_355.jpg,REMOVE,No genuine animal detected,
+Deer_362.jpg,KEEP,Genuine animal detected,elephant (0.42); bear (0.41); cow (0.20)
+Deer_388.jpg,KEEP,Genuine animal detected,elephant (0.49); elephant (0.42); bird (0.25); bird (0.24)
+Deer_5.jpg,REMOVE,No genuine animal detected,
+Deer_75.jpg,REMOVE,No genuine animal detected,
+Fox_107.jpg,REMOVE,No genuine animal detected,
+Fox_121.jpg,REMOVE,Poor quality — Task 6.3,
+Fox_137.jpg,REMOVE,No genuine animal detected,
+Fox_141.jpg,REMOVE,No genuine animal detected,
+Fox_143.jpg,KEEP,Genuine animal detected,dog (0.34)
+Fox_154.jpg,KEEP,Genuine animal detected,dog (0.40)
+Fox_155.jpg,KEEP,Genuine animal detected,dog (0.65)
+Fox_156.jpg,KEEP,Genuine animal detected,cow (0.43)
+Fox_16.jpg,KEEP,Genuine animal detected,cat (0.21)
+Fox_176.jpg,KEEP,Genuine animal detected,bear (0.26)
+Fox_179.jpg,KEEP,Genuine animal detected,dog (0.60)
+Fox_181.jpg,KEEP,Genuine animal detected,bear (0.85)
+Fox_222.jpg,KEEP,Genuine animal detected,bear (0.44)
+Fox_224.jpg,KEEP,Genuine animal detected,bird (0.39); dog (0.34)
+Fox_227.jpg,KEEP,Genuine animal detected,dog (0.89)
+Fox_228.jpg,KEEP,Genuine animal detected,horse (0.75)
+Fox_250.jpg,KEEP,Genuine animal detected,sheep (0.40); bear (0.29)
+Fox_260.jpg,KEEP,Genuine animal detected,dog (0.65)
+Fox_28.jpg,KEEP,Genuine animal detected,dog (0.92)
+Fox_288.jpg,KEEP,Genuine animal detected,bear (0.58)
+Fox_290.jpg,KEEP,Genuine animal detected,bear (0.21)
+Fox_291.jpg,KEEP,Genuine animal detected,cat (0.26)
+Fox_32.jpg,KEEP,Genuine animal detected,dog (0.69); horse (0.24); cat (0.23)
+Fox_38.jpg,KEEP,Genuine animal detected,dog (0.51); cat (0.33)
+Fox_39.jpg,KEEP,Genuine animal detected,dog (0.55); cat (0.51)
+Fox_47.jpg,KEEP,Genuine animal detected,horse (0.80)
+Fox_49.jpg,KEEP,Genuine animal detected,cat (0.69); dog (0.42)
+Fox_5.jpg,KEEP,Genuine animal detected,dog (0.64)
+Fox_51.jpg,KEEP,Genuine animal detected,dog (0.50)
+Fox_8.jpg,KEEP,Genuine animal detected,dog (0.42); bird (0.26)
+Fox_84.jpg,KEEP,Genuine animal detected,dog (0.84)
+Fox_88.jpg,KEEP,Genuine animal detected,horse (0.69); dog (0.55)
+Fox_89.jpg,KEEP,Genuine animal detected,dog (0.55)
+Fox_99.jpg,REMOVE,No genuine animal detected,
+Lion_0.jpg,REMOVE,No genuine animal detected,
+Lion_1.jpg,KEEP,Genuine animal detected,cow (0.51); cow (0.36)
+Lion_10.jpg,KEEP,Genuine animal detected,cow (0.86)
+Lion_11.jpg,KEEP,Genuine animal detected,cow (0.36); bear (0.21)
+Lion_114.jpg,KEEP,Genuine animal detected,horse (0.66)
+Lion_121.jpg,KEEP,Genuine animal detected,bear (0.65); bear (0.36)
+Lion_137.jpg,KEEP,Genuine animal detected,dog (0.55)
+Lion_145.jpg,REMOVE,No genuine animal detected,
+Lion_146.jpg,REMOVE,No genuine animal detected,
+Lion_149.jpg,REMOVE,No genuine animal detected,
+Lion_153.jpg,KEEP,Genuine animal detected,bear (0.54); dog (0.37)
+Lion_156.jpg,KEEP,Genuine animal detected,dog (0.59)
+Lion_169.jpg,KEEP,Genuine animal detected,elephant (0.51); cow (0.49)
+Lion_174.jpg,KEEP,Genuine animal detected,cow (0.26)
+Lion_177.jpg,REMOVE,No genuine animal detected,
+Lion_178.jpg,KEEP,Genuine animal detected,horse (0.55); horse (0.24)
+Lion_187.jpg,KEEP,Genuine animal detected,cat (0.27)
+Lion_197.jpg,KEEP,Genuine animal detected,dog (0.48); cat (0.33)
+Lion_2.jpg,KEEP,Genuine animal detected,cow (0.83); cow (0.33)
+Lion_204.jpg,KEEP,Genuine animal detected,cow (0.56)
+Lion_234.jpg,KEEP,Genuine animal detected,cat (0.28); cat (0.23)
+Lion_239.jpg,REMOVE,No genuine animal detected,
+Lion_266.jpg,REMOVE,Poor quality — Task 6.3,
+Lion_268.jpg,KEEP,Genuine animal detected,dog (0.43)
+Lion_269.jpg,REMOVE,No genuine animal detected,
+Lion_273.jpg,KEEP,Genuine animal detected,dog (0.72)
+Lion_277.jpg,REMOVE,No genuine animal detected,
+Lion_32.jpg,REMOVE,No genuine animal detected,
+Lion_4.jpg,KEEP,Genuine animal detected,cow (0.83)
+Lion_5.jpg,KEEP,Genuine animal detected,cow (0.82)
+Lion_58.jpg,REMOVE,No genuine animal detected,
+Lion_65.jpg,KEEP,Genuine animal detected,dog (0.27)
+Lion_73.jpg,KEEP,Genuine animal detected,dog (0.89)
+Lion_8.jpg,KEEP,Genuine animal detected,cow (0.54); horse (0.47)
+Lion_81.jpg,KEEP,Genuine animal detected,bear (0.92); bear (0.21)
+Lion_85.jpg,KEEP,Genuine animal detected,dog (0.87)
+Lion_86.jpg,KEEP,Genuine animal detected,sheep (0.54); dog (0.40); dog (0.20)
+american_black_bear_103.jpg,KEEP,Genuine animal detected,bear (0.67); bear (0.29)
+american_black_bear_106.jpg,REMOVE,No genuine animal detected,
+american_black_bear_120.jpg,KEEP,Genuine animal detected,bear (0.75)
+american_black_bear_127.jpg,KEEP,Genuine animal detected,dog (0.34); cat (0.31)
+american_black_bear_130.jpg,REMOVE,No genuine animal detected,
+american_black_bear_137.jpg,KEEP,Genuine animal detected,bear (0.93)
+american_black_bear_139.jpg,REMOVE,No genuine animal detected,
+american_black_bear_142.jpg,REMOVE,Poor quality — Task 6.3,
+american_black_bear_144.jpg,REMOVE,Poor quality — Task 6.3,
+american_black_bear_169.jpg,REMOVE,No genuine animal detected,
+american_black_bear_171.jpg,REMOVE,No genuine animal detected,
+american_black_bear_178.jpg,KEEP,Genuine animal detected,bear (0.89)
+american_black_bear_196.jpg,KEEP,Genuine animal detected,cow (0.35); giraffe (0.26); dog (0.23)
+american_black_bear_21.jpg,KEEP,Genuine animal detected,bear (0.90)
+american_black_bear_214.jpg,REMOVE,No genuine animal detected,
+american_black_bear_217.jpg,KEEP,Genuine animal detected,bear (0.72)
+american_black_bear_224.jpg,REMOVE,No genuine animal detected,
+american_black_bear_227.jpg,REMOVE,No genuine animal detected,
+american_black_bear_23.jpg,REMOVE,No genuine animal detected,
+american_black_bear_231.jpg,REMOVE,No genuine animal detected,
+american_black_bear_233.jpg,KEEP,Genuine animal detected,cat (0.65)
+american_black_bear_25.jpg,KEEP,Genuine animal detected,bear (0.65); bear (0.32)
+american_black_bear_251.jpg,REMOVE,No genuine animal detected,
+american_black_bear_262.jpg,KEEP,Genuine animal detected,cow (0.74)
+american_black_bear_265.jpg,KEEP,Genuine animal detected,cat (0.27)
+american_black_bear_271.jpg,REMOVE,No genuine animal detected,
+american_black_bear_277.jpg,REMOVE,No genuine animal detected,
+american_black_bear_282.jpg,KEEP,Genuine animal detected,bear (0.73)
+american_black_bear_285.jpg,REMOVE,No genuine animal detected,
+american_black_bear_287.jpg,KEEP,Genuine animal detected,cat (0.25)
+american_black_bear_292.jpg,KEEP,Genuine animal detected,elephant (0.27)
+american_black_bear_294.jpg,KEEP,Genuine animal detected,cow (0.72)
+american_black_bear_296.jpg,KEEP,Genuine animal detected,bear (0.90)
+american_black_bear_32.jpg,KEEP,Genuine animal detected,elephant (0.52); bear (0.29)
+american_black_bear_34.jpg,KEEP,Genuine animal detected,elephant (0.52); elephant (0.38)
+american_black_bear_40.jpg,KEEP,Genuine animal detected,elephant (0.28)
+american_black_bear_5.jpg,REMOVE,No genuine animal detected,
+american_black_bear_50.jpg,KEEP,Genuine animal detected,bear (0.24)
+american_black_bear_54.jpg,KEEP,Genuine animal detected,bear (0.57)
+american_black_bear_61.jpg,KEEP,Genuine animal detected,bear (0.70); bear (0.46)
+american_black_bear_62.jpg,REMOVE,No genuine animal detected,
+american_black_bear_80.jpg,KEEP,Genuine animal detected,bear (0.75); elephant (0.25)
+american_black_bear_85.jpg,KEEP,Genuine animal detected,bear (0.33); bear (0.24)
+american_black_bear_9.jpg,REMOVE,Poor quality — Task 6.3,
+american_black_bear_90.jpg,KEEP,Genuine animal detected,bear (0.54); bear (0.21)
+bighorn_sheep_123.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_138.jpg,KEEP,Genuine animal detected,cow (0.28); cow (0.21)
+bighorn_sheep_170.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_171.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_173.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_174.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_202.jpg,KEEP,Genuine animal detected,cow (0.67)
+bighorn_sheep_214.jpg,KEEP,Genuine animal detected,elephant (0.40)
+bighorn_sheep_227.jpg,KEEP,Genuine animal detected,dog (0.69)
+bighorn_sheep_272.jpg,KEEP,Genuine animal detected,dog (0.74)
+bighorn_sheep_276.jpg,KEEP,Genuine animal detected,dog (0.34)
+bighorn_sheep_289.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_34.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_38.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_39.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_49.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_57.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_62.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_64.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_65.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_66.jpg,REMOVE,No genuine animal detected,
+bighorn_sheep_79.jpg,KEEP,Genuine animal detected,cow (0.35); bird (0.26); sheep (0.24)
+california_vole_101.jpg,KEEP,Genuine animal detected,bird (0.42); bear (0.36)
+california_vole_12.jpg,KEEP,Genuine animal detected,cat (0.37)
+california_vole_129.jpg,KEEP,Genuine animal detected,bear (0.73)
+california_vole_13.jpg,REMOVE,No genuine animal detected,
+california_vole_131.jpg,KEEP,Genuine animal detected,cat (0.66)
+california_vole_136.jpg,KEEP,Genuine animal detected,bear (0.46); cow (0.39); dog (0.25)
+california_vole_137.jpg,KEEP,Genuine animal detected,bird (0.48); bear (0.26)
+california_vole_141.jpg,KEEP,Genuine animal detected,bear (0.86)
+california_vole_15.jpg,REMOVE,No genuine animal detected,
+california_vole_159.jpg,KEEP,Genuine animal detected,cat (0.41)
+california_vole_162.jpg,KEEP,Genuine animal detected,dog (0.23)
+california_vole_169.jpg,REMOVE,No genuine animal detected,
+california_vole_17.jpg,REMOVE,No genuine animal detected,
+california_vole_170.jpg,KEEP,Genuine animal detected,bear (0.33)
+california_vole_182.jpg,REMOVE,No genuine animal detected,
+california_vole_202.jpg,KEEP,Genuine animal detected,bear (0.82)
+california_vole_208.jpg,REMOVE,No genuine animal detected,
+california_vole_22.jpg,KEEP,Genuine animal detected,bear (0.61); bear (0.42)
+california_vole_226.jpg,REMOVE,No genuine animal detected,
+california_vole_227.jpg,KEEP,Genuine animal detected,bear (0.44)
+california_vole_228.jpg,REMOVE,No genuine animal detected,
+california_vole_24.jpg,KEEP,Genuine animal detected,bear (0.51)
+california_vole_244.jpg,REMOVE,No genuine animal detected,
+california_vole_246.jpg,REMOVE,No genuine animal detected,
+california_vole_255.jpg,KEEP,Genuine animal detected,bear (0.27)
+california_vole_259.jpg,REMOVE,No genuine animal detected,
+california_vole_263.jpg,KEEP,Genuine animal detected,bear (0.78)
+california_vole_264.jpg,KEEP,Genuine animal detected,bird (0.35); bear (0.25)
+california_vole_267.jpg,REMOVE,No genuine animal detected,
+california_vole_275.jpg,KEEP,Genuine animal detected,bear (0.29)
+california_vole_283.jpg,REMOVE,No genuine animal detected,
+california_vole_284.jpg,REMOVE,No genuine animal detected,
+california_vole_299.jpg,REMOVE,No genuine animal detected,
+california_vole_3.jpg,REMOVE,No genuine animal detected,
+california_vole_30.jpg,KEEP,Genuine animal detected,cat (0.23)
+california_vole_36.jpg,REMOVE,No genuine animal detected,
+california_vole_42.jpg,REMOVE,No genuine animal detected,
+california_vole_66.jpg,REMOVE,No genuine animal detected,
+california_vole_71.jpg,REMOVE,No genuine animal detected,
+california_vole_73.jpg,KEEP,Genuine animal detected,bear (0.92)
+california_vole_75.jpg,REMOVE,No genuine animal detected,
+california_vole_78.jpg,REMOVE,No genuine animal detected,
+california_vole_89.jpg,KEEP,Genuine animal detected,bear (0.28); dog (0.27)
+california_vole_93.jpg,KEEP,Genuine animal detected,cat (0.79)
+gray_wolf_107.jpg,KEEP,Genuine animal detected,dog (0.57); bear (0.38)
+gray_wolf_111.jpg,KEEP,Genuine animal detected,cat (0.71)
+gray_wolf_113.jpg,KEEP,Genuine animal detected,dog (0.85)
+gray_wolf_132.jpg,KEEP,Genuine animal detected,cat (0.51)
+gray_wolf_145.jpg,KEEP,Genuine animal detected,bear (0.93)
+gray_wolf_15.jpg,KEEP,Genuine animal detected,dog (0.65)
+gray_wolf_151.jpg,REMOVE,Poor quality — Task 6.3,
+gray_wolf_159.jpg,KEEP,Genuine animal detected,dog (0.55)
+gray_wolf_165.jpg,KEEP,Genuine animal detected,dog (0.74)
+gray_wolf_170.jpg,KEEP,Genuine animal detected,sheep (0.86); cow (0.34)
+gray_wolf_187.jpg,KEEP,Genuine animal detected,dog (0.54)
+gray_wolf_27.jpg,KEEP,Genuine animal detected,dog (0.74)
+gray_wolf_29.jpg,KEEP,Genuine animal detected,dog (0.50)
+gray_wolf_44.jpg,REMOVE,No genuine animal detected,
+gray_wolf_49.jpg,REMOVE,No genuine animal detected,
+gray_wolf_51.jpg,REMOVE,No genuine animal detected,
+gray_wolf_68.jpg,REMOVE,No genuine animal detected,
+gray_wolf_75.jpg,REMOVE,No genuine animal detected,
+gray_wolf_8.jpg,KEEP,Genuine animal detected,bear (0.68)
+gray_wolf_87.jpg,KEEP,Genuine animal detected,dog (0.78)
+great_horned_owl_104.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_108.jpg,KEEP,Genuine animal detected,bird (0.69); dog (0.33)
+great_horned_owl_116.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_119.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_13.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_132.jpg,KEEP,Genuine animal detected,bear (0.52); bear (0.21)
+great_horned_owl_143.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_164.jpg,KEEP,Genuine animal detected,bear (0.26)
+great_horned_owl_167.jpg,KEEP,Genuine animal detected,dog (0.25)
+great_horned_owl_186.jpg,REMOVE,Poor quality — Task 6.3,
+great_horned_owl_187.jpg,REMOVE,Poor quality — Task 6.3,
+great_horned_owl_188.jpg,REMOVE,Poor quality — Task 6.3,
+great_horned_owl_230.jpg,KEEP,Genuine animal detected,bird (0.47); dog (0.22)
+great_horned_owl_255.jpg,REMOVE,Poor quality — Task 6.3,
+great_horned_owl_258.jpg,REMOVE,Poor quality — Task 6.3,
+great_horned_owl_267.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_38.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_55.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_63.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_77.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_82.jpg,REMOVE,No genuine animal detected,
+great_horned_owl_97.jpg,REMOVE,No genuine animal detected,
+harbor_seal_11.jpg,REMOVE,No genuine animal detected,
+harbor_seal_145.jpg,KEEP,Genuine animal detected,bird (0.77); bird (0.46); dog (0.33)
+harbor_seal_148.jpg,REMOVE,No genuine animal detected,
+harbor_seal_150.jpg,KEEP,Genuine animal detected,bear (0.37)
+harbor_seal_151.jpg,KEEP,Genuine animal detected,dog (0.29)
+harbor_seal_155.jpg,KEEP,Genuine animal detected,dog (0.27)
+harbor_seal_168.jpg,REMOVE,No genuine animal detected,
+harbor_seal_194.jpg,REMOVE,No genuine animal detected,
+harbor_seal_2.jpg,REMOVE,No genuine animal detected,
+harbor_seal_216.jpg,REMOVE,No genuine animal detected,
+harbor_seal_218.jpg,KEEP,Genuine animal detected,bear (0.66); bird (0.46); bear (0.32)
+harbor_seal_222.jpg,REMOVE,No genuine animal detected,
+harbor_seal_228.jpg,REMOVE,No genuine animal detected,
+harbor_seal_23.jpg,KEEP,Genuine animal detected,bear (0.81); bear (0.50)
+harbor_seal_231.jpg,REMOVE,No genuine animal detected,
+harbor_seal_263.jpg,REMOVE,No genuine animal detected,
+harbor_seal_27.jpg,REMOVE,No genuine animal detected,
+harbor_seal_280.jpg,REMOVE,No genuine animal detected,
+harbor_seal_290.jpg,REMOVE,No genuine animal detected,
+harbor_seal_295.jpg,REMOVE,No genuine animal detected,
+harbor_seal_298.jpg,REMOVE,No genuine animal detected,
+harbor_seal_299.jpg,KEEP,Genuine animal detected,bird (0.57); dog (0.37)
+harbor_seal_39.jpg,KEEP,Genuine animal detected,bird (0.80); bear (0.60); bear (0.32)
+harbor_seal_46.jpg,REMOVE,No genuine animal detected,
+harbor_seal_50.jpg,REMOVE,No genuine animal detected,
+harbor_seal_66.jpg,REMOVE,No genuine animal detected,
+harbor_seal_81.jpg,KEEP,Genuine animal detected,bird (0.49); bear (0.41)
+harbor_seal_96.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_103.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_116.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_117.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_12.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_13.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_149.jpg,KEEP,Genuine animal detected,bear (0.31)
+kangaroo_rat_150.jpg,KEEP,Genuine animal detected,bird (0.61); bear (0.22)
+kangaroo_rat_168.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_17.jpg,KEEP,Genuine animal detected,cat (0.22)
+kangaroo_rat_183.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_184.jpg,KEEP,Genuine animal detected,dog (0.47); cat (0.34)
+kangaroo_rat_185.jpg,KEEP,Genuine animal detected,dog (0.80); cat (0.31)
+kangaroo_rat_186.jpg,KEEP,Genuine animal detected,bear (0.30)
+kangaroo_rat_189.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_198.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_209.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_223.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_225.jpg,KEEP,Genuine animal detected,dog (0.62)
+kangaroo_rat_228.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_234.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_243.jpg,KEEP,Genuine animal detected,dog (0.47)
+kangaroo_rat_249.jpg,KEEP,Genuine animal detected,cat (0.40)
+kangaroo_rat_251.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_264.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_274.jpg,KEEP,Genuine animal detected,bear (0.57)
+kangaroo_rat_292.jpg,REMOVE,Poor quality — Task 6.3,
+kangaroo_rat_8.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_87.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_88.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_91.jpg,REMOVE,No genuine animal detected,
+kangaroo_rat_92.jpg,KEEP,Genuine animal detected,bear (0.65)
+kangaroo_rat_96.jpg,KEEP,Genuine animal detected,cow (0.23)
+kangaroo_rat_98.jpg,REMOVE,No genuine animal detected,
+mountain_lion_132.jpg,REMOVE,No genuine animal detected,
+mountain_lion_161.jpg,REMOVE,No genuine animal detected,
+mountain_lion_167.jpg,KEEP,Genuine animal detected,dog (0.31)
+mountain_lion_170.jpg,KEEP,Genuine animal detected,dog (0.59)
+mountain_lion_176.jpg,REMOVE,Poor quality — Task 6.3,
+mountain_lion_177.jpg,REMOVE,Poor quality — Task 6.3,
+mountain_lion_190.jpg,REMOVE,No genuine animal detected,
+mountain_lion_198.jpg,REMOVE,No genuine animal detected,
+mountain_lion_206.jpg,REMOVE,No genuine animal detected,
+mountain_lion_211.jpg,REMOVE,Poor quality — Task 6.3,
+mountain_lion_227.jpg,REMOVE,No genuine animal detected,
+mountain_lion_232.jpg,REMOVE,No genuine animal detected,
+mountain_lion_236.jpg,KEEP,Genuine animal detected,dog (0.43)
+mountain_lion_280.jpg,REMOVE,No genuine animal detected,
+mountain_lion_288.jpg,REMOVE,Poor quality — Task 6.3,
+mountain_lion_49.jpg,REMOVE,No genuine animal detected,
+mountain_lion_5.jpg,REMOVE,No genuine animal detected,
+mountain_lion_72.jpg,REMOVE,No genuine animal detected,
+mountain_lion_8.jpg,REMOVE,No genuine animal detected,
+mountain_lion_80.jpg,REMOVE,No genuine animal detected,
+mountain_lion_86.jpg,KEEP,Genuine animal detected,cow (0.61)
+mountain_lion_98.jpg,KEEP,Genuine animal detected,dog (0.59)
+rabbit_142.jpg,REMOVE,No genuine animal detected,
+rabbit_17.jpg,KEEP,Genuine animal detected,sheep (0.33); cat (0.27)
+rabbit_216.jpg,KEEP,Genuine animal detected,bear (0.25); bird (0.25)
+rabbit_233.jpg,KEEP,Genuine animal detected,cat (0.38); dog (0.37)
+rabbit_259.jpg,REMOVE,No genuine animal detected,
+red_tailed_hawk_141.jpg,REMOVE,No genuine animal detected,
+red_tailed_hawk_181.jpg,REMOVE,No genuine animal detected,
+red_tailed_hawk_23.jpg,REMOVE,Poor quality — Task 6.3,
+red_tailed_hawk_261.jpg,REMOVE,No genuine animal detected,
+red_tailed_hawk_48.jpg,KEEP,Genuine animal detected,dog (0.45); bird (0.34)
+red_tailed_hawk_77.jpg,KEEP,Genuine animal detected,dog (0.55)
+red_tailed_hawk_79.jpg,KEEP,Genuine animal detected,bird (0.42); bear (0.26)
+tule_elk_112.jpg,REMOVE,Poor quality — Task 6.3,
+tule_elk_155.jpg,REMOVE,No genuine animal detected,
+tule_elk_160.jpg,REMOVE,No genuine animal detected,
+tule_elk_203.jpg,KEEP,Genuine animal detected,cow (0.81); cow (0.56); cow (0.30); cow (0.25)
+tule_elk_237.jpg,REMOVE,No genuine animal detected,
+tule_elk_240.jpg,KEEP,Genuine animal detected,cow (0.22)
+tule_elk_251.jpg,KEEP,Genuine animal detected,cow (0.25)
+tule_elk_267.jpg,REMOVE,No genuine animal detected,
+tule_elk_51.jpg,REMOVE,No genuine animal detected,
+turkey_145.jpg,KEEP,Genuine animal detected,cow (0.70); cow (0.38); cow (0.32); cow (0.28); cow (0.23)
+turkey_147.jpg,KEEP,Genuine animal detected,bird (0.83); dog (0.52); bird (0.33)
+turkey_157.jpg,KEEP,Genuine animal detected,bird (0.91); bird (0.59); dog (0.36)
+turkey_187.jpg,KEEP,Genuine animal detected,bird (0.57); bird (0.48); bird (0.32); horse (0.31); bird (0.23)
+turkey_188.jpg,KEEP,Genuine animal detected,dog (0.81); bird (0.66)
+turkey_195.jpg,REMOVE,No genuine animal detected,
+turkey_196.jpg,REMOVE,No genuine animal detected,
+turkey_225.jpg,KEEP,Genuine animal detected,elephant (0.73)
+turkey_244.jpg,REMOVE,No genuine animal detected,
+turkey_26.jpg,KEEP,Genuine animal detected,bear (0.23)
+turkey_267.jpg,REMOVE,No genuine animal detected,
+turkey_268.jpg,REMOVE,No genuine animal detected,
+turkey_49.jpg,REMOVE,No genuine animal detected,
+turkey_50.jpg,REMOVE,No genuine animal detected,
+turkey_59.jpg,KEEP,Genuine animal detected,dog (0.58)
+turkey_78.jpg,KEEP,Genuine animal detected,dog (0.63)
