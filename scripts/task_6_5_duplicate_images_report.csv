@@ -1,0 +1,11 @@
+image_1,image_2,type,similarity
+american_black_bear_34.jpg,american_black_bear_50.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_40.jpg,american_black_bear_50.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_40.jpg,american_black_bear_80.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_40.jpg,american_black_bear_85.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_40.jpg,american_black_bear_90.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_50.jpg,american_black_bear_85.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_50.jpg,american_black_bear_90.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+american_black_bear_80.jpg,american_black_bear_85.jpg,POSSIBLE_NEAR_DUPLICATE,96.88%
+american_black_bear_85.jpg,american_black_bear_90.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
+mountain_lion_167.jpg,mountain_lion_170.jpg,POSSIBLE_NEAR_DUPLICATE,93.75%
