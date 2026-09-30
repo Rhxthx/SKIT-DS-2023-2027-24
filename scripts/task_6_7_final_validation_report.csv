@@ -1,0 +1,12 @@
+metric,value
+final_images,181
+final_labels,181
+classes,74
+total_objects,273
+missing_labels,0
+orphan_labels,0
+empty_labels,0
+malformed_annotation_lines,0
+invalid_class_ids,0
+invalid_bounding_boxes,0
+validation_status,PASSED
