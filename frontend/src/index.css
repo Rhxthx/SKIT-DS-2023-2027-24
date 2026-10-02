@@ -600,6 +600,32 @@ main {
   .auth-page { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 480px) {
+  .auth-brand {
+    padding: 28px 20px;
+    border-right: none;
+  }
+  .auth-brand-content h1 {
+    font-size: 1.4rem;
+  }
+  .auth-brand-deco {
+    letter-spacing: 6px;
+    font-size: 1.1rem;
+  }
+  .auth-form-wrap {
+    padding: 28px 16px;
+  }
+  .auth-form-card {
+    max-width: 100%;
+  }
+  .field-input input {
+    font-size: 16px; /* prevents iOS auto-zoom on focus */
+  }
+  .auth-tabs {
+    margin-bottom: 20px;
+  }
+}
+
 .auth-brand {
   background:
     radial-gradient(circle at 20% 20%, rgba(76, 175, 109, 0.25), transparent 55%),
