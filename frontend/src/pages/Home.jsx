@@ -24,11 +24,23 @@ const steps = [
 
 export default function Home() {
   const [fileName, setFileName] = useState(null)
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showResult, setShowResult] = useState(true)
   const navigate = useNavigate()
 
   const handleFile = (e) => {
     const file = e.target.files?.[0]
-    if (file) setFileName(file.name)
+    if (!file) return
+
+    setFileName(file.name)
+    setShowResult(false)
+    setIsAnalyzing(true)
+
+    // Simulates backend detection delay — replace with real API call when ready
+    setTimeout(() => {
+      setIsAnalyzing(false)
+      setShowResult(true)
+    }, 1800)
   }
 
   return (
@@ -59,10 +71,20 @@ export default function Home() {
             </label>
           </div>
 
+                    
+                      {isAnalyzing ? (
+            <div className="result-card skeleton-card">
+              <div className="skeleton skeleton-photo" />
+              <div className="skeleton skeleton-line skeleton-line-lg" />
+              <div className="skeleton skeleton-line skeleton-line-sm" />
+              <div className="skeleton skeleton-line skeleton-line-bar" />
+              <div className="skeleton skeleton-line" />
+              <div className="skeleton skeleton-line" />
+              <div className="skeleton skeleton-line" />
+            </div>
+          ) : showResult ? (
           <div className="result-card">
             <div className="result-photo">
-              <span className="result-emoji">{sample.thumbnailEmoji}</span>
-            </div>
             <div className="result-summary">
               <span className="badge badge-success"><CheckCircle2 size={14} /> Detected</span>
               <h3>{sample.animal}</h3>
