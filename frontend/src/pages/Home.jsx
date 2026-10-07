@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb } from 'lucide-react'
@@ -144,5 +143,3 @@ export default function Home() {
     </>
   )
 }
-=======
->>>>>>> Stashed changes
