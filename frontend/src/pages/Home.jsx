@@ -126,6 +126,8 @@ export default function Home() {
             </button>
           </div>
         </div>
+          ) : null}
+        </div>  
       </section>
 
       <section className="how-it-works">
