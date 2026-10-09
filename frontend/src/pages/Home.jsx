@@ -28,7 +28,7 @@ export default function Home() {
   const [showResult, setShowResult] = useState(true)
   const navigate = useNavigate()
 
-  const handleFile = (e) => {
+    const handleFile = async (e) => {
     const file = e.target.files?.[0]
     if (!file) return
 
@@ -36,11 +36,18 @@ export default function Home() {
     setShowResult(false)
     setIsAnalyzing(true)
 
-    // Simulates backend detection delay — replace with real API call when ready
-    setTimeout(() => {
-      setIsAnalyzing(false)
-      setShowResult(true)
-    }, 1800)
+    // send the image to the backend, which saves the prediction in the database
+    try {
+      const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
+      const formData = new FormData()
+      formData.append('image', file)
+      await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
+    } catch (err) {
+      console.error('upload failed', err)
+    }
+
+    setIsAnalyzing(false)
+    setShowResult(true)
   }
 
   return (
