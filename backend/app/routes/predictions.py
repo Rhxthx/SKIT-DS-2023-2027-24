@@ -3,6 +3,8 @@ import uuid
 
 from flask import Blueprint, jsonify, request, current_app
 
+from app.models.prediction import predictions, make_prediction
+
 predictions_bp = Blueprint("predictions", __name__)
 
 # only allow these image types to be uploaded
@@ -14,6 +16,15 @@ def allowed_file(filename):
         return False
     ext = filename.rsplit(".", 1)[1].lower()
     return ext in ALLOWED_EXTENSIONS
+
+
+def serialize(doc):
+    # mongodb gives back an ObjectId and a datetime which are not json
+    # serializable, so convert them to strings before sending
+    doc["_id"] = str(doc["_id"])
+    if doc.get("created_at"):
+        doc["created_at"] = doc["created_at"].isoformat()
+    return doc
 
 
 @predictions_bp.post("/")
@@ -40,17 +51,20 @@ def upload_and_predict():
     save_path = os.path.join(upload_folder, filename)
     file.save(save_path)
 
-    # running the yolo model comes in the Model Integration sprint.
-    # for now we just confirm the upload and validation worked.
-    return jsonify({
-        "message": "image uploaded",
-        "image_path": save_path,
-        "detections": [],
-        "animal_count": 0,
-    }), 201
+    # real yolo detections come in the Model Integration sprint. for now we
+    # store an empty list so the prediction record still gets saved in the db.
+    detections = []
+
+    # user authentication is added later, so no user is linked yet
+    doc = make_prediction(user_id=None, image_path=save_path, detections=detections)
+    result = predictions().insert_one(doc)
+    doc["_id"] = result.inserted_id
+
+    return jsonify(serialize(doc)), 201
 
 
 @predictions_bp.get("/")
 def history():
-    # will return the logged in user's past predictions
-    return jsonify({"message": "history not implemented yet"}), 501
+    # return the saved predictions, newest first
+    items = list(predictions().find().sort("created_at", -1).limit(50))
+    return jsonify({"predictions": [serialize(d) for d in items]})
