@@ -25,15 +25,61 @@ const steps = [
 
 export default function Home() {
   const [fileName, setFileName] = useState(null)
+<<<<<<< Updated upstream
   const navigate = useNavigate()
 
   const handleFile = (e) => {
     const file = e.target.files?.[0]
     if (file) setFileName(file.name)
+=======
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showResult, setShowResult] = useState(true)
+  const [previewUrl, setPreviewUrl] = useState(null);
+  const navigate = useNavigate()
+
+<<<<<<< Updated upstream
+    const handleFile = async (e) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+=======
+const handleFile = (e) => {
+  const file = e.target.files?.[0];
+  if (!file) return;
+>>>>>>> Stashed changes
+
+  setFileName(file.name);
+  setPreviewUrl(URL.createObjectURL(file));
+
+  setShowResult(false);
+  setIsAnalyzing(true);
+
+  setTimeout(() => {
+    setIsAnalyzing(false);
+    setShowResult(true);
+  }, 5000);
+};
+
+<<<<<<< Updated upstream
+    // send the image to the backend, which saves the prediction in the database
+    try {
+      const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
+      const formData = new FormData()
+      formData.append('image', file)
+      await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
+    } catch (err) {
+      console.error('upload failed', err)
+    }
+
+    setIsAnalyzing(false)
+    setShowResult(true)
+>>>>>>> Stashed changes
   }
+=======
+>>>>>>> Stashed changes
 
   return (
     <>
+    {console.log("Render state:", { isAnalyzing, showResult })}
       <section className="hero">
         <div className="hero-text">
           <h1>Wildlife Image Recognition</h1>
@@ -60,6 +106,20 @@ export default function Home() {
             </label>
           </div>
 
+<<<<<<< Updated upstream
+=======
+          {isAnalyzing ? (
+            <div className="result-card skeleton-card">
+              <div className="skeleton skeleton-photo" />
+              <div className="skeleton skeleton-line skeleton-line-lg" />
+              <div className="skeleton skeleton-line skeleton-line-sm" />
+              <div className="skeleton skeleton-line skeleton-line-bar" />
+              <div className="skeleton skeleton-line" />
+              <div className="skeleton skeleton-line" />
+              <div className="skeleton skeleton-line" />
+            </div>
+          ) : showResult ? (
+>>>>>>> Stashed changes
           <div className="result-card">
             <div className="result-photo">
               <span className="result-emoji">{sample.thumbnailEmoji}</span>
@@ -104,6 +164,7 @@ export default function Home() {
               View full result
             </button>
           </div>
+          ) : null}
         </div>
       </section>
 
@@ -121,6 +182,11 @@ export default function Home() {
       </section>
     </>
   )
+<<<<<<< Updated upstream
 }
 =======
+<<<<<<< Updated upstream
+=======
+}
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
