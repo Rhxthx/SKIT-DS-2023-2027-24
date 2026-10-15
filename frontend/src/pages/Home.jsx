@@ -1,7 +1,7 @@
 <<<<<<< Updated upstream
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb } from 'lucide-react'
+import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb, Loader2 } from 'lucide-react'
 import { detections } from '../data/mockData.js'
 
 const sample = detections[0]
@@ -26,6 +26,7 @@ const steps = [
 export default function Home() {
   const [fileName, setFileName] = useState(null)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   const navigate = useNavigate()
 
   const handleFile = (e) => {
@@ -39,6 +40,14 @@ export default function Home() {
 
 <<<<<<< Updated upstream
     const handleFile = async (e) => {
+=======
+  const [previewUrl, setPreviewUrl] = useState(null)
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showResult, setShowResult] = useState(true)
+  const navigate = useNavigate()
+
+  const handleFile = async (e) => {
+>>>>>>> Stashed changes
     const file = e.target.files?.[0]
     if (!file) return
 =======
@@ -47,6 +56,7 @@ const handleFile = (e) => {
   if (!file) return;
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
   setFileName(file.name);
   setPreviewUrl(URL.createObjectURL(file));
 
@@ -60,15 +70,33 @@ const handleFile = (e) => {
 };
 
 <<<<<<< Updated upstream
+=======
+    if (previewUrl) URL.revokeObjectURL(previewUrl)
+    setPreviewUrl(URL.createObjectURL(file))
+    setFileName(file.name)
+    setShowResult(false)
+    setIsAnalyzing(true)
+
+    // lets the user pick the same image again later
+    e.target.value = ''
+
+    // minimum time the loader stays visible, so it doesn't just flash
+    const minDelay = new Promise((resolve) => setTimeout(resolve, 2000))
+
+>>>>>>> Stashed changes
     // send the image to the backend, which saves the prediction in the database
-    try {
-      const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
-      const formData = new FormData()
-      formData.append('image', file)
-      await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
-    } catch (err) {
-      console.error('upload failed', err)
-    }
+    const upload = (async () => {
+      try {
+        const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
+        const formData = new FormData()
+        formData.append('image', file)
+        await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
+      } catch (err) {
+        console.error('upload failed', err)
+      }
+    })()
+
+    await Promise.all([upload, minDelay])
 
     setIsAnalyzing(false)
     setShowResult(true)
@@ -107,13 +135,22 @@ const handleFile = (e) => {
           </div>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
           {isAnalyzing ? (
             <div className="result-card skeleton-card">
-              <div className="skeleton skeleton-photo" />
+              <div className="analyzing-photo">
+                {previewUrl && <img src={previewUrl} alt="Uploaded preview" />}
+                <div className="analyzing-overlay">
+                  <Loader2 className="spin" size={38} />
+                  <p>Analyzing your image…</p>
+                </div>
+              </div>
+              <div className="analyzing-bar"><div className="analyzing-bar-fill" /></div>
               <div className="skeleton skeleton-line skeleton-line-lg" />
               <div className="skeleton skeleton-line skeleton-line-sm" />
-              <div className="skeleton skeleton-line skeleton-line-bar" />
               <div className="skeleton skeleton-line" />
               <div className="skeleton skeleton-line" />
               <div className="skeleton skeleton-line" />
@@ -183,10 +220,14 @@ const handleFile = (e) => {
     </>
   )
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 }
 =======
 <<<<<<< Updated upstream
 =======
 }
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+}
 >>>>>>> Stashed changes
