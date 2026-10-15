@@ -1,6 +1,7 @@
+<<<<<<< Updated upstream
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb } from 'lucide-react'
+import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb, Loader2 } from 'lucide-react'
 import { detections } from '../data/mockData.js'
 
 const sample = detections[0]
@@ -24,34 +25,89 @@ const steps = [
 
 export default function Home() {
   const [fileName, setFileName] = useState(null)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  const navigate = useNavigate()
+
+  const handleFile = (e) => {
+    const file = e.target.files?.[0]
+    if (file) setFileName(file.name)
+=======
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showResult, setShowResult] = useState(true)
+  const [previewUrl, setPreviewUrl] = useState(null);
+  const navigate = useNavigate()
+
+<<<<<<< Updated upstream
+    const handleFile = async (e) => {
+=======
+  const [previewUrl, setPreviewUrl] = useState(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [showResult, setShowResult] = useState(true)
   const navigate = useNavigate()
 
-    const handleFile = async (e) => {
+  const handleFile = async (e) => {
+>>>>>>> Stashed changes
     const file = e.target.files?.[0]
     if (!file) return
+=======
+const handleFile = (e) => {
+  const file = e.target.files?.[0];
+  if (!file) return;
+>>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
+  setFileName(file.name);
+  setPreviewUrl(URL.createObjectURL(file));
+
+  setShowResult(false);
+  setIsAnalyzing(true);
+
+  setTimeout(() => {
+    setIsAnalyzing(false);
+    setShowResult(true);
+  }, 5000);
+};
+
+<<<<<<< Updated upstream
+=======
+    if (previewUrl) URL.revokeObjectURL(previewUrl)
+    setPreviewUrl(URL.createObjectURL(file))
     setFileName(file.name)
     setShowResult(false)
     setIsAnalyzing(true)
 
+    // lets the user pick the same image again later
+    e.target.value = ''
+
+    // minimum time the loader stays visible, so it doesn't just flash
+    const minDelay = new Promise((resolve) => setTimeout(resolve, 2000))
+
+>>>>>>> Stashed changes
     // send the image to the backend, which saves the prediction in the database
-    try {
-      const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
-      const formData = new FormData()
-      formData.append('image', file)
-      await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
-    } catch (err) {
-      console.error('upload failed', err)
-    }
+    const upload = (async () => {
+      try {
+        const API = import.meta.env.VITE_API_URL || 'https://wildlife-animal-detection-production.up.railway.app'
+        const formData = new FormData()
+        formData.append('image', file)
+        await fetch(`${API}/api/predictions/`, { method: 'POST', body: formData })
+      } catch (err) {
+        console.error('upload failed', err)
+      }
+    })()
+
+    await Promise.all([upload, minDelay])
 
     setIsAnalyzing(false)
     setShowResult(true)
+>>>>>>> Stashed changes
   }
+=======
+>>>>>>> Stashed changes
 
   return (
     <>
+    {console.log("Render state:", { isAnalyzing, showResult })}
       <section className="hero">
         <div className="hero-text">
           <h1>Wildlife Image Recognition</h1>
@@ -78,20 +134,33 @@ export default function Home() {
             </label>
           </div>
 
-                    
-                      {isAnalyzing ? (
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+          {isAnalyzing ? (
             <div className="result-card skeleton-card">
-              <div className="skeleton skeleton-photo" />
+              <div className="analyzing-photo">
+                {previewUrl && <img src={previewUrl} alt="Uploaded preview" />}
+                <div className="analyzing-overlay">
+                  <Loader2 className="spin" size={38} />
+                  <p>Analyzing your image…</p>
+                </div>
+              </div>
+              <div className="analyzing-bar"><div className="analyzing-bar-fill" /></div>
               <div className="skeleton skeleton-line skeleton-line-lg" />
               <div className="skeleton skeleton-line skeleton-line-sm" />
-              <div className="skeleton skeleton-line skeleton-line-bar" />
               <div className="skeleton skeleton-line" />
               <div className="skeleton skeleton-line" />
               <div className="skeleton skeleton-line" />
             </div>
           ) : showResult ? (
+>>>>>>> Stashed changes
           <div className="result-card">
             <div className="result-photo">
+              <span className="result-emoji">{sample.thumbnailEmoji}</span>
+            </div>
             <div className="result-summary">
               <span className="badge badge-success"><CheckCircle2 size={14} /> Detected</span>
               <h3>{sample.animal}</h3>
@@ -132,9 +201,8 @@ export default function Home() {
               View full result
             </button>
           </div>
-        </div>
           ) : null}
-        </div>  
+        </div>
       </section>
 
       <section className="how-it-works">
@@ -151,4 +219,15 @@ export default function Home() {
       </section>
     </>
   )
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 }
+=======
+<<<<<<< Updated upstream
+=======
+}
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+}
+>>>>>>> Stashed changes
