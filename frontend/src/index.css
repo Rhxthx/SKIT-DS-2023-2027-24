@@ -755,8 +755,6 @@ main {
   margin-top: 16px;
 }
 
-<<<<<<< Updated upstream
-=======
 
 /* ---------- Skeleton Loader ---------- */
 /* ---------- Skeleton + Analyzing Loader ---------- */
@@ -839,7 +837,6 @@ main {
   .skeleton, .spin, .analyzing-bar-fill { animation: none; }
 }
 
->>>>>>> Stashed changes
 /* ---------- History ---------- */
 
 .history-page { padding-top: 48px; }
@@ -1060,4 +1057,21 @@ main {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ---------- Drag & drop upload ---------- */
+
+.upload-card {
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.upload-card-dragging {
+  border-color: var(--accent);
+  background: var(--panel-light);
+  transform: scale(1.015);
+}
+
+.upload-error {
+  margin-top: 14px;
+  text-align: left;
 }
