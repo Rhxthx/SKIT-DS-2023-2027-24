@@ -1,10 +1,12 @@
-<<<<<<< Updated upstream
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { UploadCloud, ImagePlus, CheckCircle2, PawPrint, Trees, Ruler, Weight, Palette, Beef, Users2, Lightbulb, Loader2 } from 'lucide-react'
 import { detections } from '../data/mockData.js'
 
 const sample = detections[0]
+
+const ACCEPTED_TYPES = ['image/jpeg', 'image/png', 'image/jpg']
+const MAX_SIZE_MB = 10
 
 const details = [
   { icon: PawPrint, label: 'Species', value: sample.animal },
@@ -25,65 +27,37 @@ const steps = [
 
 export default function Home() {
   const [fileName, setFileName] = useState(null)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  const navigate = useNavigate()
-
-  const handleFile = (e) => {
-    const file = e.target.files?.[0]
-    if (file) setFileName(file.name)
-=======
-  const [isAnalyzing, setIsAnalyzing] = useState(false)
-  const [showResult, setShowResult] = useState(true)
-  const [previewUrl, setPreviewUrl] = useState(null);
-  const navigate = useNavigate()
-
-<<<<<<< Updated upstream
-    const handleFile = async (e) => {
-=======
   const [previewUrl, setPreviewUrl] = useState(null)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [showResult, setShowResult] = useState(true)
+  const [isDragging, setIsDragging] = useState(false)
+  const [uploadError, setUploadError] = useState('')
   const navigate = useNavigate()
 
-  const handleFile = async (e) => {
->>>>>>> Stashed changes
-    const file = e.target.files?.[0]
-    if (!file) return
-=======
-const handleFile = (e) => {
-  const file = e.target.files?.[0];
-  if (!file) return;
->>>>>>> Stashed changes
+  // shared by click-to-upload and drag-and-drop
+  const processFile = async (file) => {
+    if (!file || isAnalyzing) return
 
-<<<<<<< Updated upstream
-  setFileName(file.name);
-  setPreviewUrl(URL.createObjectURL(file));
+    // validate before doing anything else
+    if (!ACCEPTED_TYPES.includes(file.type)) {
+      setUploadError('Please upload a JPG, JPEG or PNG image.')
+      return
+    }
+    if (file.size > MAX_SIZE_MB * 1024 * 1024) {
+      setUploadError(`Image is too large. Maximum size is ${MAX_SIZE_MB}MB.`)
+      return
+    }
 
-  setShowResult(false);
-  setIsAnalyzing(true);
-
-  setTimeout(() => {
-    setIsAnalyzing(false);
-    setShowResult(true);
-  }, 5000);
-};
-
-<<<<<<< Updated upstream
-=======
+    setUploadError('')
     if (previewUrl) URL.revokeObjectURL(previewUrl)
     setPreviewUrl(URL.createObjectURL(file))
     setFileName(file.name)
     setShowResult(false)
     setIsAnalyzing(true)
 
-    // lets the user pick the same image again later
-    e.target.value = ''
-
     // minimum time the loader stays visible, so it doesn't just flash
     const minDelay = new Promise((resolve) => setTimeout(resolve, 2000))
 
->>>>>>> Stashed changes
     // send the image to the backend, which saves the prediction in the database
     const upload = (async () => {
       try {
@@ -100,14 +74,34 @@ const handleFile = (e) => {
 
     setIsAnalyzing(false)
     setShowResult(true)
->>>>>>> Stashed changes
   }
-=======
->>>>>>> Stashed changes
+
+  const handleFile = (e) => {
+    const file = e.target.files?.[0]
+    // lets the user pick the same image again later
+    e.target.value = ''
+    processFile(file)
+  }
+
+  const handleDragOver = (e) => {
+    e.preventDefault()
+    setIsDragging(true)
+  }
+
+  const handleDragLeave = (e) => {
+    // ignore leave events fired by child elements
+    if (e.currentTarget.contains(e.relatedTarget)) return
+    setIsDragging(false)
+  }
+
+  const handleDrop = (e) => {
+    e.preventDefault()
+    setIsDragging(false)
+    processFile(e.dataTransfer.files?.[0])
+  }
 
   return (
     <>
-    {console.log("Render state:", { isAnalyzing, showResult })}
       <section className="hero">
         <div className="hero-text">
           <h1>Wildlife Image Recognition</h1>
@@ -118,15 +112,21 @@ const handleFile = (e) => {
         </div>
 
         <div className="hero-panels">
-          <div className="upload-card">
+          <div
+            className={'upload-card' + (isDragging ? ' upload-card-dragging' : '')}
+            onDragOver={handleDragOver}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+          >
             <label className="upload-drop">
               <input type="file" accept="image/jpeg,image/png,image/jpg" onChange={handleFile} hidden />
               <UploadCloud size={40} strokeWidth={1.6} />
-              <p className="upload-title">Upload an Image</p>
+              <p className="upload-title">{isDragging ? 'Drop your image here' : 'Upload an Image'}</p>
               <p className="upload-sub">Drag &amp; drop an image here or click to browse</p>
-              <p className="upload-formats">(JPG, PNG, JPEG)</p>
+              <p className="upload-formats">(JPG, PNG, JPEG, max {MAX_SIZE_MB}MB)</p>
               {fileName && <p className="upload-filename">Selected: {fileName}</p>}
             </label>
+            {uploadError && <p className="form-error upload-error">{uploadError}</p>}
             <div className="upload-divider"><span>OR</span></div>
             <label className="btn btn-primary upload-btn">
               <input type="file" accept="image/jpeg,image/png,image/jpg" onChange={handleFile} hidden />
@@ -134,11 +134,6 @@ const handleFile = (e) => {
             </label>
           </div>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
           {isAnalyzing ? (
             <div className="result-card skeleton-card">
               <div className="analyzing-photo">
@@ -156,7 +151,6 @@ const handleFile = (e) => {
               <div className="skeleton skeleton-line" />
             </div>
           ) : showResult ? (
->>>>>>> Stashed changes
           <div className="result-card">
             <div className="result-photo">
               <span className="result-emoji">{sample.thumbnailEmoji}</span>
@@ -219,15 +213,4 @@ const handleFile = (e) => {
       </section>
     </>
   )
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 }
-=======
-<<<<<<< Updated upstream
-=======
-}
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
-}
->>>>>>> Stashed changes
