@@ -71,6 +71,8 @@ export default function History() {
                       <img src={d.image_path} alt="Uploaded animal" style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer' }} />
                     </a>
                   ) : (
+                    <PawPrint size={28} />
+                  )}
                 </div>
 
                 <div style={{ flex: 1 }}>
