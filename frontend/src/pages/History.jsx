@@ -66,11 +66,11 @@ export default function History() {
                     flexShrink: 0,
                   }}
                 >
-                  {isUrl ? (
-                    <img src={d.image_path} alt="Uploaded animal" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                {isUrl ? (
+                    <a href={d.image_path} target="_blank" rel="noopener noreferrer" title="Open full image" style={{ width: '100%', height: '100%' }}>
+                      <img src={d.image_path} alt="Uploaded animal" style={{ width: '100%', height: '100%', objectFit: 'cover', cursor: 'pointer' }} />
+                    </a>
                   ) : (
-                    <PawPrint size={28} />
-                  )}
                 </div>
 
                 <div style={{ flex: 1 }}>
