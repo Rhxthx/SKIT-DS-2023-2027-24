@@ -153,7 +153,9 @@ export default function Home() {
           ) : showResult ? (
           <div className="result-card">
             <div className="result-photo">
-              <span className="result-emoji">{sample.thumbnailEmoji}</span>
+              {previewUrl
+                ? <img src={previewUrl} alt="Uploaded animal" />
+                : <span className="result-emoji">{sample.thumbnailEmoji}</span>}
             </div>
             <div className="result-summary">
               <span className="badge badge-success"><CheckCircle2 size={14} /> Detected</span>
