@@ -1075,3 +1075,60 @@ main {
   margin-top: 14px;
   text-align: left;
 }
+
+
+
+/* ---------- Light theme + theme toggle button ---------- */
+
+.theme-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--panel-border);
+  background: var(--panel-light);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+
+.theme-toggle:hover { transform: scale(1.08); }
+
+[data-theme='light'] {
+  --bg: #f4f8f5;
+  --bg-soft: #e9f1ec;
+  --panel: #ffffff;
+  --panel-light: #e6f1ea;
+  --panel-border: rgba(0, 0, 0, 0.1);
+  --accent: #2e8b57;
+  --accent-strong: #256f45;
+  --accent-soft: rgba(46, 139, 87, 0.14);
+  --text: #10261a;
+  --text-muted: #46604f;
+  --text-faint: #6b8574;
+  --gold: #b8860b;
+}
+
+[data-theme='light'] body { background: var(--bg); }
+[data-theme='light'] .navbar { background: rgba(244, 248, 245, 0.92); }
+[data-theme='light'] .btn-primary { color: #ffffff; }
+[data-theme='light'] .auth-tab-active { color: #ffffff; }
+[data-theme='light'] .btn-secondary:hover { background: #d5e8dc; }
+[data-theme='light'] .auth-brand { background: linear-gradient(160deg, #dff0e5, #c9e4d3); }
+[data-theme='light'] .result-photo,
+[data-theme='light'] .analyzing-photo { background: linear-gradient(160deg, #d4eadb, #bfdcca); }
+[data-theme='light'] .analyzing-overlay { background: rgba(255, 255, 255, 0.65); }
+[data-theme='light'] .confidence-track,
+[data-theme='light'] .analyzing-bar { background: rgba(0, 0, 0, 0.08); }
+[data-theme='light'] .details-list li { border-bottom-color: rgba(0, 0, 0, 0.08); }
+[data-theme='light'] .skeleton {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.06) 25%, rgba(0, 0, 0, 0.12) 37%, rgba(0, 0, 0, 0.06) 63%);
+  background-size: 400% 100%;
+}

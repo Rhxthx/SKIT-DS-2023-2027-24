@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import History from './pages/History.jsx'
 import Results from './pages/Results.jsx'
+import ThemeToggle from './components/ThemeToggle.jsx'
 
 function Layout({ children }) {
   return (
@@ -21,42 +22,46 @@ function Layout({ children }) {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <Home />
-          </Layout>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <Layout>
-            <About />
-          </Layout>
-        }
-      />
-      <Route
-        path="/history"
-        element={
-          <ProtectedRoute>
+    <>
+      <ThemeToggle />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
             <Layout>
-              <History />
+              <Home />
             </Layout>
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/results/:id"
-        element={
-          <Layout>
-            <Results />
-          </Layout>
-        }
-      />
-    </Routes>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+        <Route
+          path="/history"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <History />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/results/:id"
+          element={
+            <Layout>
+              <Results />
+            </Layout>
+          }
+        />
+      </Routes>
+    </>
+
   )
 }
